@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl sm:text-5xl md:text-6xl font-black text-center mb-16 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .nav-link {
+    @apply text-gray-300 hover:text-pink-300 font-semibold transition-all duration-300 relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-400 transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .mobile-nav-link {
+    @apply block px-4 py-3 text-gray-300 hover:text-pink-300 hover:bg-purple-900/50 rounded-lg font-semibold transition-all duration-300;
+  }
+
+  .social-icon {
+    @apply p-2 bg-gradient-to-br from-pink-500/20 to-purple-500/20 hover:from-pink-500/40 hover:to-purple-500/40 rounded-lg text-pink-300 hover:text-pink-100 transition-all duration-300 hover:scale-110;
+  }
+
+  .social-icon-footer {
+    @apply p-3 bg-gradient-to-br from-pink-500/20 to-purple-500/20 hover:from-pink-500/40 hover:to-purple-500/40 rounded-full text-pink-300 hover:text-pink-100 transition-all duration-300 hover:scale-110 hover:rotate-12;
+  }
+
+  .feature-card {
+    @apply p-6 bg-gradient-to-br from-purple-900/40 via-pink-900/30 to-blue-900/40 rounded-2xl border border-pink-500/20 hover:border-pink-500/40 backdrop-blur-sm shadow-xl hover:shadow-pink-500/20 transition-all duration-300;
+  }
+
+  .stat-card {
+    @apply p-6 bg-gradient-to-br from-purple-900/40 to-pink-900/40 rounded-xl border border-pink-500/30 backdrop-blur-sm;
+  }
+}
+
+@layer utilities {
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
