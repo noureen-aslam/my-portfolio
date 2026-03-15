@@ -6,37 +6,37 @@ export default function Certificates() {
       title: "Cybersecurity Fundamentals",
       issuer: "Deloitte",
       gradient: "from-pink-500 to-purple-600",
-      file: "/images/cyber deloitte.png", 
+      file: "images/cyber deloitte.jpg", 
     },
     {
       title: "Oracle Certified Foundations Associate",
       issuer: "Oracle",
       gradient: "from-purple-500 to-cyan-600",
-      file: "/images/oracle_ocr.png", 
+      file: "images/oracle_ocr.jpg", 
     },
     {
       title: "Python Programming Certificate",
       issuer: "Professional Certification",
       gradient: "from-cyan-500 to-blue-600",
-      file: "/images/python certificate.png", 
+      file: "images/python certificate.jpg", 
     },
     {
       title: "Generative AI Specialization",
       issuer: "Outskill",
       gradient: "from-blue-500 to-pink-600",
-      file: "/images/outskill_generative_ai_.png", 
+      file: "images/outskill_generative_ai_.jpg", 
     },
     {
       title: "GenAI Springboard Program",
       issuer: "Industry Certification",
       gradient: "from-pink-500 to-orange-600",
-      file: "/images/GenAI springboard.png", 
+      file: "images/GenAI springboard.jpg", 
     },
     {
       title: "Agentic AI Fundamentals",
       issuer: "Google",
       gradient: "from-orange-500 to-purple-600",
-      file: "/images/Google Agentic AI.png", 
+      file: "images/Google Agentic AI.jpg", 
     },
   ];
 

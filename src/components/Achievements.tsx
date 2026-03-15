@@ -8,7 +8,7 @@ export default function Achievements() {
       description: "Competed against 500+ teams and secured second place in prestigious state-level competition",
       year: "2025",
       gradient: "from-yellow-500 to-orange-600",
-      file: "/images/Nammahackathon.png" // example file
+      file: "images/Nammahackathon.jpg" 
     },
     {
       icon: Star,
@@ -16,7 +16,7 @@ export default function Achievements() {
       description: "IIITDM Kancheepuram - Recognized as top performer in Short Term Training Program",
       year: "2025",
       gradient: "from-pink-500 to-purple-600",
-      file: "/images/STTP(BEST PERFORMER).png"
+      file: "images/STTP(BEST PERFORMER).jpg"
     },
     {
       icon: Award,
@@ -38,7 +38,7 @@ export default function Achievements() {
       description: "Outstanding performance in Bangalore's premier student hackathon",
       year: "2024",
       gradient: "from-blue-500 to-cyan-600",
-      file: "/images/Nammahackathon.png"
+      file: "images/Nammahackathon.jpg"
     }
   ];
 

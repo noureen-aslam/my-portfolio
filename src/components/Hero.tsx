@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="relative w-48 h-48 rounded-full bg-gradient-to-br from-pink-400 to-purple-600 flex items-center justify-center border-4 border-white/20 shadow-2xl">
               <div className="relative w-48 h-48 rounded-full bg-gradient-to-br from-pink-400 to-purple-600 flex items-center justify-center border-4 border-white/20 shadow-2xl overflow-hidden">
   <img
-    src="/images/noureen.png"
+    src="images/noureen.jpg"
     alt="Noureen Aslam"
     className="w-full h-full object-cover rounded-full"
   />
@@ -50,12 +50,14 @@ export default function Hero() {
             View Projects
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </button>
-          <button
-            className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-bold text-lg text-white shadow-lg shadow-cyan-500/50 hover:shadow-cyan-500/75 hover:scale-105 transition-all duration-300 flex items-center gap-2"
-          >
-            <Download size={20} />
-            Download Resume
-          </button>
+          <a
+  href="images/Noureen_Aslam_Resume.pdf" 
+  download="Noureen_Aslam_Resume.pdf"
+  className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-bold text-lg text-white shadow-lg shadow-cyan-500/50 hover:shadow-cyan-500/75 hover:scale-105 transition-all duration-300 flex items-center gap-2"
+>
+  <Download size={20} />
+  Download Resume
+</a>
         </div>
 
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
