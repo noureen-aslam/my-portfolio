@@ -1,4 +1,4 @@
-import { ExternalLink, FileText, Brain, Shield, Camera, Cpu, ShoppingBag, Building } from 'lucide-react';
+import { ExternalLink, Brain, Shield, Camera, Cpu, ShoppingBag, Building } from 'lucide-react';
 
 export default function Projects() {
   const projects = [

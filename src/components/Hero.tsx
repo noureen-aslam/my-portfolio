@@ -50,14 +50,20 @@ export default function Hero() {
             View Projects
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </button>
-          <a
-  href="images/Noureen_Aslam_Resume.pdf" 
-  download="Noureen_Aslam_Resume.pdf"
-  className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-bold text-lg text-white shadow-lg shadow-cyan-500/50 hover:shadow-cyan-500/75 hover:scale-105 transition-all duration-300 flex items-center gap-2"
+          <button
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "images/Noureen_Aslam_Resume.pdf";
+    link.download = "Noureen_Aslam_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+  className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full font-bold text-lg text-white shadow-lg shadow-pink-500/50 hover:shadow-pink-500/75 hover:scale-105 transition-all duration-300 flex items-center gap-2"
 >
-  <Download size={20} />
   Download Resume
-</a>
+  <Download className="group-hover:translate-y-1 transition-transform" size={20} />
+</button>
         </div>
 
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">

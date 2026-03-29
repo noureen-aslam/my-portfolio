@@ -6,7 +6,7 @@ export default function Certificates() {
       title: "Cybersecurity Fundamentals",
       issuer: "Deloitte",
       gradient: "from-pink-500 to-purple-600",
-      file: "images/cyber deloitte.jpg", 
+      file: "images/cyberdeloitte.jpg", 
     },
     {
       title: "Oracle Certified Foundations Associate",
@@ -18,7 +18,7 @@ export default function Certificates() {
       title: "Python Programming Certificate",
       issuer: "Professional Certification",
       gradient: "from-cyan-500 to-blue-600",
-      file: "images/python certificate.jpg", 
+      file: "images/pythoncertificate.jpg", 
     },
     {
       title: "Generative AI Specialization",
@@ -30,14 +30,50 @@ export default function Certificates() {
       title: "GenAI Springboard Program",
       issuer: "Industry Certification",
       gradient: "from-pink-500 to-orange-600",
-      file: "images/GenAI springboard.jpg", 
+      file: "images/GenAIspringboard.jpg", 
     },
     {
       title: "Agentic AI Fundamentals",
       issuer: "Google",
       gradient: "from-orange-500 to-purple-600",
-      file: "images/Google Agentic AI.jpg", 
+      file: "images/GoogleAgenticAI.jpg", 
     },
+    {
+  title: "Software Engineer Intern",
+  issuer: "HackerRank",
+  gradient: "from-green-500 to-emerald-600",
+  file: "images/software_engineer_interncertificate_page.jpg", 
+},
+{
+  title: "Java",
+  issuer: "HackerRank",
+  gradient: "from-yellow-500 to-orange-600",
+  file: "images/java_basiccertificate_page.jpg",
+},
+{
+  title: "Python",
+  issuer: "HackerRank",
+  gradient: "from-blue-500 to-indigo-600",
+  file: "images/python_basiccertificate_page.jpg",
+},
+{
+  title: "JavaScript (Intermediate)",
+  issuer: "HackerRank",
+  gradient: "from-purple-500 to-pink-600",
+  file: "images/javascript_intermediatecertificate_page.jpg",
+},
+{
+  title: "Frontend Developer (React)",
+  issuer: "HackerRank",
+  gradient: "from-cyan-500 to-blue-600",
+  file: "images/frontend_developer_reactcertificate_page.jpg",
+},
+{
+  title: "Node.js (Intermediate)",
+  issuer: "HackerRank",
+  gradient: "from-red-500 to-purple-600",
+  file: "images/nodejs_intermediatecertificate_page.jpg",
+},
   ];
 
   return (
@@ -54,14 +90,17 @@ export default function Certificates() {
               key={index}
               className="feature-card group hover:scale-105 transition-all duration-300"
             >
-              {/* Show image preview if PNG/JPG */}
-              {cert.file && cert.file.endsWith(".png") && (
-                <img
-                  src={cert.file}
-                  alt={cert.title}
-                  className="w-full h-40 object-cover rounded-lg mb-4"
-                />
-              )}
+              {/* Show image preview if JPG/PNG */}
+{cert.file &&
+  (cert.file.endsWith(".jpg") ||
+   cert.file.endsWith(".jpeg") ||
+   cert.file.endsWith(".png")) && (
+    <img
+      src={cert.file}
+      alt={cert.title}
+      className="w-full h-40 object-cover rounded-lg mb-4"
+    />
+)}
 
               <div
                 className={`p-4 bg-gradient-to-br ${cert.gradient} rounded-xl w-fit mb-4 group-hover:rotate-6 transition-transform`}
