@@ -43,7 +43,7 @@ export default function Projects() {
       title: "PrimeProperties Website",
       description: "Professional real estate website with property listings and advanced search features.",
       tech: ["React", "Node.js", "MongoDB"],
-      link: "https://primeproperties-bangalore.vercel.app/",
+      link: "https://www.primepropertiesbangalore.in/",
       gradient: "from-orange-500 to-purple-600"
     },
     {
@@ -51,7 +51,7 @@ export default function Projects() {
       title: "CoolWorld Website",
       description: "Modern business website with responsive design and interactive features.",
       tech: ["HTML", "CSS", "JavaScript"],
-      link: "https://cool-world.vercel.app/",
+      link: "https://cool-world.in/",
       gradient: "from-purple-500 to-cyan-600"
     }
   ];
