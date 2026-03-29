@@ -53,8 +53,8 @@ export default function Hero() {
           <button
   onClick={() => {
     const link = document.createElement("a");
-    link.href = "images/Noureen_Aslam_Resume.pdf";
-    link.download = "Noureen_Aslam_Resume.pdf";
+    link.href = "images/Noureen_developer_resume.pdf";
+    link.download = "Noureen_developer_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
