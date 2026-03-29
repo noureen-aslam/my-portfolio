@@ -18,7 +18,7 @@ export default function Certificates() {
       title: "Python Programming Certificate",
       issuer: "Professional Certification",
       gradient: "from-cyan-500 to-blue-600",
-      file: "images/pythoncertificate.jpg", 
+      file: "images/python certificate.jpg", 
     },
     {
       title: "Generative AI Specialization",
