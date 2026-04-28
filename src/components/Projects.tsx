@@ -1,7 +1,23 @@
-import { ExternalLink, Brain, Shield, Camera, Cpu, ShoppingBag, Building } from 'lucide-react';
+import { ExternalLink, Brain, Shield, Camera, Cpu, ShoppingBag, Building, Plane, Award } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
+    {
+      icon: Plane,
+      title: "VOYEX — Smart Trip Planner",
+      description: "Full-stack travel planning app with curated packages, a multi-step booking wizard, payment flow, and a personal dashboard. Features PDF ticket export, canvas image download, and Web Share API on the confirmation screen.",
+      tech: ["React 18", "TypeScript", "Java Servlet", "MySQL", "Docker", "Tailwind"],
+      link: "https://voyex-bay.vercel.app/",
+      gradient: "from-cyan-500 to-blue-600"
+    },
+    {
+      icon: Award,
+      title: "VisionX E-Certificate Verification",
+      description: "Full-stack certificate verification platform with QR-code-based fraud prevention and real-time validation. Built an automated bulk certificate generation pipeline — 50+ certificates issued for Synapse AI Workshop.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "QR Code"],
+      link: "https://github.com/noureen-aslam/visionx-e-certificate",
+      gradient: "from-teal-500 to-green-600"
+    },
     {
       icon: Brain,
       title: "Sentiment Classification Research",
@@ -86,7 +102,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm group-hover:gap-3 transition-all"
                 >
-                  {project.link.includes('doi.org') ? 'View Research' : 'Visit Website'}
+                  {project.link.includes('doi.org') ? 'View Research' : project.link.includes('github.com') ? 'View on GitHub' : 'Visit Website'}
                   <ExternalLink size={16} />
                 </a>
               )}
